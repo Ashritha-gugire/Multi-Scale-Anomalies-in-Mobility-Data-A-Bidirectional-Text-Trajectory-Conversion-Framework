@@ -131,6 +131,11 @@ A comprehensive collection of processed mobility datasets for emergency behavior
 "During Tuesday afternoon at 12:30, the user visited a Japanese restaurant in a high-density urban area and engaged in dining activities."
 
 ## How People Adapted During Emergency
+<img width="4908" height="3588" alt="01_executive_summary_dashboard" src="https://github.com/user-attachments/assets/46ebc31b-0156-426a-ae80-4717616476d1" />
+
+
+<img width="5307" height="3084" alt="05_statistical_significance" src="https://github.com/user-attachments/assets/03f9f43a-a6a0-46f4-b78c-0ea0ba0cac41" />
+
 
 **Where They Went**:
 - 52% of usual locations were abandoned
