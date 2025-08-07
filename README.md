@@ -208,7 +208,7 @@ Example: One person's irregularity increased by 33%, completely changing from ro
 
 1. Download the YJMob100K dataset
 2. Install Python with pandas, numpy, scikit-learn, and matplotlib
-3. Run the main analysis script
+3. Run the main analysis script starting from 1. POI to fucntional region file -> Grid to 5 datasets -> EDA -> text generation -> complete anomaly execution.
 4. Explore individual user patterns and emergency adaptations
 
 ## Results Summary
