@@ -161,6 +161,9 @@ A comprehensive collection of processed mobility datasets for emergency behavior
 
 Example: One person's irregularity increased by 33%, completely changing from routine behavior to highly exploratory patterns.
 
+<img width="587" height="379" alt="image" src="https://github.com/user-attachments/assets/17798cb0-b3e7-44d7-b73d-49daec4182f6" />
+
+
 ## Why This Matters
 
 **For Emergency Planning**:
