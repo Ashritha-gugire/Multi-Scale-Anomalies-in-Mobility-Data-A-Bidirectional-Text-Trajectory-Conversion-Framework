@@ -23,102 +23,99 @@ This project analyzes human mobility patterns during normal and emergency period
 **Time**: 30-minute intervals throughout each day
 
 ## Primary Datasets
-1. Human Mobility Dataset (YJMob100K)
+#### 1. Human Mobility Dataset (YJMob100K)
 
-Source: Zenodo - YJMob100K Dataset
-Description: Large-scale GPS trajectory data covering normal and emergency periods
-Files:
+Source: [https://zenodo.org/records/10836269]  
+Description: Large-scale GPS trajectory data covering normal and emergency periods 
+Files: 
 
-yjmob100k-dataset1.csv.gz - Business-as-usual mobility patterns (75 days)
-yjmob100k-dataset2.csv.gz - Emergency behavior patterns (75 days)
+yjmob100k-dataset1.csv.gz - Business-as-usual mobility patterns (75 days) 
+yjmob100k-dataset2.csv.gz - Emergency behavior patterns (75 days) 
+ 
 
-
-Size: ~29M records across 25,000 users
-Time Coverage: 150 days (Days 0-60: Normal, Days 61-75: Emergency)
-Spatial Coverage: Metropolitan area with 500m × 500m grid cells
-
+Size: ~29M records across 25,000 users  
+Time Coverage: 150 days (Days 0-60: Normal, Days 61-75: Emergency) 
+Spatial Coverage: Metropolitan area with 500m × 500m grid cells  
+ 
 2. Point of Interest (POI) Dataset
-
+ 
 Source: Zenodo - POI Categories
-Description: Comprehensive POI data with functional categorization
-Files:
+Description: Comprehensive POI data with functional categorization 
+Files:  
 
-cell_POIcat.csv.gz - POI locations and counts per grid cell
-POI_datacategories.csv - POI category definitions and mappings
-
-
-Coverage: 20,146 unique locations with 85 POI categories
-Features: Spatial coordinates, POI counts, category classifications
-
-Processed Scientific Datasets
-3. Scientific Mobility Base Dataset
-
-File: scientific_mobility_base_dataset.csv
-Description: Core mobility data with integrated POI context and enhanced features
-Features:
-
-Temporal: Hour, time periods, day of week, weekend indicators
-Spatial: Grid coordinates, distance from center, spatial zones
-Contextual: Primary POI category, functional groups, density metrics
-Behavioral: User ID, activity intensity, mobility patterns
+cell_POIcat.csv.gz - POI locations and counts per grid cell 
+POI_datacategories.csv - POI category definitions and mappings 
 
 
-Records: 2.5M+ mobility records
-Users: 100 users (filtered for comprehensive analysis)
+Coverage: 20,146 unique locations with 85 POI categories 
+Features: Spatial coordinates, POI counts, category classifications 
 
-4. POI Presence Matrix Dataset
+### Processed Scientific Datasets 
+# Human Mobility Dataset Collection
 
-File: scientific_mobility_poi_matrix_dataset.csv
-Description: Binary feature matrix for POI presence analysis
-Features:
+A comprehensive collection of processed mobility datasets for emergency behavior analysis and urban mobility research.
 
-Binary indicators for top 20 POI categories
-Binary indicators for all functional groups
-Perfect for machine learning applications
+## Datasets
 
+### 1. **Scientific Mobility Base Dataset**
+- **File**: `scientific_mobility_base_dataset.csv`
+- **Description**: Core mobility data with POI context and temporal features
+- **Size**: 2.5M+ records, 100 users
+- **Features**: User ID, day, time slot, coordinates, POI categories, distance metrics
 
-Applications: Classification, clustering, anomaly detection
+### 2. **Scientific Mobility POI Matrix Dataset** 
+- **File**: `scientific_mobility_poi_matrix_dataset.csv`
+- **Description**: Binary feature matrix with POI presence indicators
+- **Features**: All mobility data + binary columns for top 20 POI categories and functional groups
+- **Use**: Machine learning, classification, clustering
 
-5. Functional Groups Dataset
+### 3. **Scientific Mobility Functional Dataset**
+- **File**: `scientific_mobility_functional_dataset.csv` 
+- **Description**: Mobility data with hierarchical functional group categorization
+- **Categories**: Food Services, Retail, Transportation, Healthcare, Education, etc.
+- **Use**: Urban planning, functional zone analysis
 
-File: scientific_mobility_functional_dataset.csv
-Description: Mobility data with hierarchical functional categorization
-Functional Categories:
+### 4. **Scientific User Profiles Dataset**
+- **File**: `scientific_user_profiles_dataset.csv`
+- **Description**: Individual user behavioral characteristics and patterns
+- **Metrics**: Activity intensity, mobility radius, spatial coverage, weekend ratios
+- **Records**: 100 users with behavioral profiles
 
-Food Services, Retail Shopping, Transportation
-Education, Healthcare, Entertainment
-Services, Business, Religious, Other
+### 5. **Scientific Location Profiles Dataset**
+- **File**: `scientific_location_profiles_dataset.csv`
+- **Description**: Location-based characteristics and visit patterns  
+- **Metrics**: Popularity scores, visitor counts, temporal usage patterns
+- **Records**: 20K+ locations with usage statistics
 
+## Data Columns
 
-Use Cases: Urban planning, service allocation, policy analysis
+**Core columns in base dataset:**
+- `user_id` - User identifier (0-99)
+- `day` - Day index (0-74) 
+- `time_slot` - 30-minute intervals (0-47)
+- `grid_x`, `grid_y` - Spatial coordinates
+- `hour` - Hour of day (0-23)
+- `location_category` - POI category
+- `location_function` - Functional group
+- `poi_density` - POI count at location
+- `distance_from_center` - Distance from city center
 
-6. User Behavioral Profiles
+## Analysis Periods
 
-File: scientific_user_profiles_dataset.csv
-Description: Aggregated individual-level mobility characteristics
-Metrics:
+- **Normal Period**: Days 0-60 (business as usual)
+- **Emergency Period**: Days 61-75 (crisis response)
 
-Activity: Total records, active days, intensity
-Mobility: Radius, spatial coverage, distance preferences
-Temporal: Weekend ratios, temporal diversity
-Behavioral: Cluster assignments, change patterns
+## Applications
 
+- Emergency response analysis
+- Urban mobility modeling  
+- Behavioral pattern detection
+- Location recommendation
+- Anomaly detection
 
-Applications: User segmentation, personalization, behavioral modeling
+## License
 
-7. Location Characteristics Profiles
-
-File: scientific_location_profiles_dataset.csv
-Description: Place-based analysis of location attractiveness and usage
-Metrics:
-
-Popularity: Unique visitors, total visits, popularity scores
-Temporal: Active hours, temporal span, weekend ratios
-Spatial: Coordinates, distance from center
-Context: Dominant POI categories, functional groups
-
-
-Applications: Location recommendation, urban planning, service optimization
+MIT License - see LICENSE file for details.
 
 ## Methods Used
 
