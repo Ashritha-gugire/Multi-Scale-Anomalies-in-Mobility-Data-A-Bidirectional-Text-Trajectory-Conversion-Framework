@@ -8,6 +8,8 @@ This project analyzes human mobility patterns during normal and emergency period
 
 **Main Discovery**: During emergencies, daily behavior patterns become more structured while individual activities show only small increases in irregularity.
 
+![Implementation Pipeline](https://github.com/user-attachments/assets/06b3387a-7a01-4768-bd85-d6987f15c7ea)
+
 **Numbers That Matter**:
 - Daily anomaly rates DECREASED from 8.2% to 7.4% during emergencies
 - Individual trip anomalies increased slightly from 10.5% to 10.9%
