@@ -113,10 +113,6 @@ A comprehensive collection of processed mobility datasets for emergency behavior
 - Location recommendation
 - Anomaly detection
 
-## License
-
-MIT License - see LICENSE file for details.
-
 ## Methods Used
 
 **Two-Level Analysis**:
